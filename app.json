@@ -1,6 +1,6 @@
 {
   "name": "discordpy-startup",
   "description": "Herokuでdiscord.pyを始めるテンプレート",
-  "repository": "https://github.com/DiscordBotPortalJP/discordpy-startup",
+  "repository": "https://github.com/Kuraplayz04/app_discord",
   "keywords": ["python", "discord", "bot"]
 }
