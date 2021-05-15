@@ -5,7 +5,7 @@ import discord
 client = discord.Client(activity=discord.Game(name='青鬼管理システム'))
 
 # 自分のBotのアクセストークンを記入
-TOKEN = "ODQyNzM1NDQxOTQxMTAyNjAy.YJ5oig.gi02R4PhTKuAtGecGecUt_QNgfE"
+TOKEN = "ODQyNzM1NDQxOTQxMTAyNjAy.YJ5oig.7fRniiWQs81RiSzt9lmbd6m6pwM"
 
 @client.event
 async def joined(ctx, *, member: discord.Member):
@@ -111,20 +111,13 @@ async def on_message(message):
         channel = client.get_channel(825992683701010451)
         await channel.send(ans1 + wait_message.content + ans2)
 
-
-
-
-
-
-
-
     if message.content.startswith("/l3"):
         # /getと打ち込まれたチャンネル上に下記の文章を出力
         await message.channel.send("ラスト [lv3]")
 
         # ユーザーからのメッセージを待つ
         wait_message = await client.wait_for("message", check=check)
-        ansl1 = '\nラストどうぞ（'
+        ansl1 = 'ラストどうぞ（'
         ansl2 = '）'
 
         # メッセージを打ち込まれたのを確認すると下記の文章を出力
